@@ -1,0 +1,9 @@
+[submodule "static-server"]
+	path = static-server
+	url = https://github.com/jasenmichael/cloudKi-static-server-module
+[submodule "pm2-ui"]
+	path = pm2-ui
+	url = https://github.com/jasenmichael/pm2-ui
+[submodule "cloud-client"]
+	path = cloud-client
+	url = https://github.com/jasenmichael/cloudKi-cloud-client-module

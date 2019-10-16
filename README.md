@@ -12,13 +12,20 @@ git submodule add -b master git@github.com:jasenmichael/cloudKi-modules.git modu
 git submodule add -b master https://github.com/jasenmichael/cloudKi-static-server-module static-server
 git submodule add -b master https://github.com/jasenmichael/pm2-ui pm2-ui
 git submodule add -b master https://github.com/jasenmichael/cloudKi-cloud-client-module cloud-client
-cd static-server
-git pull origin master
-cd ../pm2-ui
-git pull origin master
-cd ../cloud-ui
-git pull origin master
-cd ../
+
+
+git submodule update 
+git submodule foreach git checkout master 
+git submodule foreach git pull origin master
+
+# cd static-server
+# git pull origin master
+# cd ../pm2-ui
+# git pull origin master
+# cd ../cloud-ui
+# git pull origin master
+# cd ../
+
 # not needed on newer git v's
 git submodule update --init --recursive
 

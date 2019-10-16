@@ -7,7 +7,7 @@ default modules for the cloudKi Client Software Suite
 ```bash
 # to build
 # from root
-git submodule add -b master https://github.com/jasenmichael/cloudKi-modules modules
+git submodule add -b master git@github.com:jasenmichael/cloudKi-modules.git modules
 # from modules
 git submodule add -b master https://github.com/jasenmichael/cloudKi-static-server-module static-server
 git submodule add -b master https://github.com/jasenmichael/pm2-ui pm2-ui
